@@ -1,0 +1,209 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "keywords": ["hello", "hi", "hey", "good morning", "good evening", "good afternoon", "greetings", "namaste", "hola"],
+      "response": "Hello! 👋 Welcome to HealthBot!<br><br><strong>I can help you with:</strong><br>• Common Symptoms & Conditions<br>• First Aid & Emergency Care<br>• Chronic Diseases<br>• Wellness Tips<br>• Medications<br><br>What would you like to know?"
+    },
+    {
+      "tag": "goodbye",
+      "keywords": ["bye", "goodbye", "see you", "later", "take care"],
+      "response": "Goodbye! Stay healthy! 🌟<br><br>✓ Drink water<br>✓ Get enough sleep<br>✓ Exercise daily<br>✓ Eat healthy<br><br>Take care! 💚"
+    },
+    {
+      "tag": "thanks",
+      "keywords": ["thank", "thanks", "thx", "thank you"],
+      "response": "You're welcome! 😊<br><br>⚠️ Remember: This is general info only. Always consult doctors for serious concerns!<br><br>Feel free to ask more! 💙"
+    },
+    {
+      "tag": "fever",
+      "keywords": ["fever", "temperature", "high temp", "hot", "burning up"],
+      "response": "<strong>🌡️ FEVER</strong><br><br><strong>Temps:</strong><br>• Normal: 98.6°F<br>• Low-grade: 99-100.4°F<br>• High: Above 102°F<br><br><strong>Symptoms:</strong><br>• Sweating, chills<br>• Headache<br>• Muscle aches<br>• Weakness<br><br><strong>Treatment:</strong><br>✓ Rest<br>✓ Stay hydrated<br>✓ Take acetaminophen<br>✓ Light clothing<br><br>⚠️ See doctor if >103°F or lasts >3 days"
+    },
+    {
+      "tag": "cold_flu",
+      "keywords": ["cold", "flu", "runny nose", "stuffy nose", "congestion", "sniffles"],
+      "response": "<strong>🤧 COLD vs FLU</strong><br><br><strong>Cold:</strong><br>• Runny nose ★<br>• Sore throat<br>• Mild cough<br>• Low fever<br><br><strong>Flu:</strong><br>• High fever ★<br>• Severe body aches ★<br>• Extreme fatigue ★<br>• Dry cough<br><br><strong>Treatment:</strong><br>✓ Rest 7-9 hours<br>✓ Drink fluids<br>✓ Salt water gargle<br>✓ Humidifier<br><br>✓ Get flu vaccine!"
+    },
+    {
+      "tag": "cough",
+      "keywords": ["cough", "coughing", "hacking", "persistent cough"],
+      "response": "<strong>😷 COUGH</strong><br><br><strong>Types:</strong><br>• Dry: No mucus<br>• Wet: With phlegm<br><br><strong>Remedies:</strong><br>✓ Honey (1-2 tsp)<br>✓ Stay hydrated<br>✓ Humidifier<br>✓ Steam inhalation<br>✓ Throat lozenges<br>✓ Salt water gargle<br><br>⚠️ See doctor if >3 weeks or blood in mucus"
+    },
+    {
+      "tag": "headache",
+      "keywords": ["headache", "head pain", "migraine", "head ache"],
+      "response": "<strong>🤕 HEADACHE</strong><br><br><strong>Types:</strong><br>• Tension: Dull aching<br>• Migraine: Severe, throbbing<br>• Cluster: Around eye<br><br><strong>Triggers:</strong><br>• Stress<br>• Dehydration<br>• Poor posture<br>• Eye strain<br>• Lack of sleep<br><br><strong>Relief:</strong><br>✓ Dark, quiet room<br>✓ Drink water<br>✓ Cold compress<br>✓ Pain reliever<br>✓ Massage<br><br>🚨 Emergency if sudden/severe"
+    },
+    {
+      "tag": "stomach_pain",
+      "keywords": ["stomach pain", "stomach ache", "belly pain", "tummy ache"],
+      "response": "<strong>💚 STOMACH PAIN</strong><br><br><strong>Causes:</strong><br>• Indigestion<br>• Gas<br>• Food poisoning<br>• Acidity<br><br><strong>Remedies:</strong><br>✓ Ginger tea<br>✓ Heating pad<br>✓ Bland foods (BRAT diet)<br>✓ Rest<br><br>⚠️ See doctor if:<br>• Severe pain<br>• Blood in stool<br>• High fever<br>• Persistent vomiting"
+    },
+    {
+      "tag": "nausea_vomiting",
+      "keywords": ["nausea", "vomiting", "throw up", "feeling sick", "queasy"],
+      "response": "<strong>🤢 NAUSEA & VOMITING</strong><br><br><strong>Causes:</strong><br>• Stomach flu<br>• Food poisoning<br>• Motion sickness<br>• Pregnancy<br><br><strong>Care:</strong><br>✓ Sip clear fluids<br>✓ Bland foods<br>✓ Rest upright<br>✓ Ginger tea<br>✓ Fresh air<br><br>⚠️ See doctor if >24 hours or blood in vomit"
+    },
+    {
+      "tag": "diarrhea",
+      "keywords": ["diarrhea", "loose stools", "watery stools", "loose motion"],
+      "response": "<strong>💧 DIARRHEA</strong><br><br><strong>Treatment:</strong><br>✓ Stay hydrated (ORS)<br>✓ BRAT diet<br>✓ Clear broths<br>✓ Probiotics<br><br><strong>Avoid:</strong><br>❌ Dairy<br>❌ Fatty foods<br>❌ Caffeine<br>❌ Alcohol<br><br>⚠️ See doctor if >2 days or blood in stool"
+    },
+    {
+      "tag": "diabetes",
+      "keywords": ["diabetes", "blood sugar", "insulin", "glucose"],
+      "response": "<strong>📊 DIABETES</strong><br><br><strong>Types:</strong><br>• Type 1: No insulin<br>• Type 2: Insulin resistance<br><br><strong>Symptoms:</strong><br>• Increased thirst ★<br>• Frequent urination ★<br>• Extreme hunger<br>• Fatigue<br>• Blurred vision<br><br><strong>Management:</strong><br>✓ Monitor blood sugar<br>✓ Medications<br>✓ Healthy diet<br>✓ Exercise 30 min/day<br>✓ Maintain weight<br><br><strong>Prevention:</strong><br>✓ Exercise<br>✓ Balanced diet<br>✓ Limit sugar<br>✓ Whole grains"
+    },
+    {
+      "tag": "blood_pressure",
+      "keywords": ["blood pressure", "bp", "hypertension", "high bp", "low bp"],
+      "response": "<strong>💓 BLOOD PRESSURE</strong><br><br><strong>Categories:</strong><br>• Normal: <120/80<br>• Elevated: 120-129/<80<br>• High: ≥130/80<br>• Low: <90/60<br><br><strong>Management:</strong><br>✓ Reduce sodium<br>✓ DASH diet<br>✓ Exercise 30 min/day<br>✓ Maintain weight<br>✓ Limit alcohol<br>✓ Quit smoking<br>✓ Manage stress<br><br>🚨 Emergency if >180/120"
+    },
+    {
+      "tag": "heart_attack",
+      "keywords": ["heart attack", "chest pain", "cardiac arrest", "heart pain"],
+      "response": "<strong>❤️ HEART ATTACK - EMERGENCY!</strong><br><br>🚨 <strong>CALL 911 IF:</strong><br>• Chest pain/pressure ★★★<br>• Pain in arms, jaw, back<br>• Shortness of breath<br>• Cold sweat<br>• Nausea<br><br><strong>IMMEDIATE:</strong><br>1. Call 911<br>2. Chew aspirin (325mg)<br>3. Stay calm, sit down<br><br><strong>Prevention:</strong><br>✓ Don't smoke<br>✓ Exercise<br>✓ Healthy diet<br>✓ Control BP<br>✓ Manage stress<br><br>⏰ TIME = MUSCLE!"
+    },
+    {
+      "tag": "asthma",
+      "keywords": ["asthma", "breathing problem", "wheezing", "shortness of breath", "inhaler"],
+      "response": "<strong>🫁 ASTHMA</strong><br><br><strong>Symptoms:</strong><br>• Wheezing<br>• Shortness of breath<br>• Chest tightness<br>• Coughing (night)<br><br><strong>Triggers:</strong><br>• Allergens<br>• Cold air<br>• Exercise<br>• Smoke<br><br><strong>Management:</strong><br>✓ Use inhaler correctly<br>✓ Take medications<br>✓ Avoid triggers<br>✓ Monitor peak flow<br><br>🚨 Call 911 if:<br>• Severe breathing difficulty<br>• Blue lips<br>• Inhaler not helping"
+    },
+    {
+      "tag": "allergies",
+      "keywords": ["allergy", "allergic", "rash", "itching", "hives"],
+      "response": "<strong>🤧 ALLERGIES</strong><br><br><strong>Common:</strong><br>• Pollen<br>• Dust<br>• Pet dander<br>• Foods (nuts, milk)<br><br><strong>Symptoms:</strong><br>• Sneezing<br>• Runny nose<br>• Itchy eyes<br>• Rash/hives<br><br><strong>Treatment:</strong><br>✓ Avoid allergens<br>✓ Antihistamines<br>✓ Air purifier<br><br>🚨 ANAPHYLAXIS:<br>• Difficulty breathing<br>• Swelling throat<br>→ Use EpiPen, Call 911!"
+    },
+    {
+      "tag": "covid19",
+      "keywords": ["covid", "coronavirus", "covid-19", "corona"],
+      "response": "<strong>😷 COVID-19</strong><br><br><strong>Symptoms:</strong><br>• Fever<br>• Cough<br>• Loss of taste/smell ★<br>• Fatigue<br>• Body aches<br><br><strong>If sick:</strong><br>✓ Get tested<br>✓ Stay home<br>✓ Rest, hydrate<br>✓ Monitor symptoms<br><br><strong>Prevention:</strong><br>✓ Get vaccinated 💉<br>✓ Wear mask<br>✓ Wash hands<br>✓ Distance<br><br>🚨 Emergency if trouble breathing"
+    },
+    {
+      "tag": "burns",
+      "keywords": ["burn", "burnt", "burning", "scald", "fire"],
+      "response": "<strong>🔥 BURNS FIRST AID</strong><br><br><strong>Degrees:</strong><br>• 1st: Red, no blisters<br>• 2nd: Blisters<br>• 3rd: White/charred (EMERGENCY!)<br><br><strong>Steps:</strong><br>1. Stop burning<br>2. Cool with water 10-20 min<br>3. Remove jewelry<br>4. Don't break blisters<br>5. Apply aloe vera<br>6. Cover loosely<br><br>❌ DON'T use ice/butter<br><br>🚨 ER if >3 inches or on face/hands"
+    },
+    {
+      "tag": "cuts_wounds",
+      "keywords": ["cut", "wound", "bleeding", "injury", "scrape"],
+      "response": "<strong>🩹 CUTS & WOUNDS</strong><br><br><strong>Steps:</strong><br>1. Wash hands<br>2. Stop bleeding (pressure 5-10 min)<br>3. Clean with water<br>4. Apply antibiotic ointment<br>5. Cover with bandage<br>6. Change daily<br><br><strong>Infection signs:</strong><br>• Redness, swelling<br>• Pus<br>• Fever<br><br>🚨 See doctor if:<br>• Won't stop bleeding<br>• Deep/wide cut<br>• Animal bite<br>• Signs of infection"
+    },
+    {
+      "tag": "cpr",
+      "keywords": ["cpr", "cardiopulmonary", "heart stopped", "not breathing", "unconscious"],
+      "response": "<strong>🚨 CPR - EMERGENCY!</strong><br><br>⚠️ <strong>CALL 911 FIRST!</strong><br><br><strong>CPR Steps:</strong><br>1. Check responsiveness<br>2. Call 911<br>3. Position on back<br>4. <strong>Compressions:</strong><br>   - Center of chest<br>   - 2 inches deep<br>   - 100-120/min<br>   - 30 compressions<br>5. <strong>Airway:</strong> Tilt head<br>6. <strong>Breathing:</strong> 2 breaths<br><br><strong>Hands-Only CPR:</strong><br>Just do compressions!<br><br>💡 Push hard, push fast!<br>Continue until help arrives"
+    },
+    {
+      "tag": "choking",
+      "keywords": ["choking", "can't breathe", "heimlich", "food stuck"],
+      "response": "<strong>😮 CHOKING - HEIMLICH</strong><br><br><strong>Signs:</strong><br>• Can't speak<br>• Can't breathe<br>• Hands on throat<br>• Blue skin<br><br><strong>Heimlich Steps:</strong><br>1. Stand behind person<br>2. Wrap arms around waist<br>3. Make fist above navel<br>4. Quick upward thrusts<br>5. Repeat until clear<br><br><strong>Infants:</strong><br>• 5 back blows<br>• 5 chest thrusts<br><br>🚨 Call 911<br>If unconscious, start CPR"
+    },
+    {
+      "tag": "stroke",
+      "keywords": ["stroke", "brain attack", "paralysis", "face drooping", "slurred speech"],
+      "response": "<strong>🧠 STROKE - F.A.S.T.</strong><br><br>🚨 <strong>CALL 911 IMMEDIATELY!</strong><br><br><strong>F.A.S.T.:</strong><br>• <strong>F</strong>ace drooping<br>• <strong>A</strong>rm weakness<br>• <strong>S</strong>peech difficulty<br>• <strong>T</strong>ime to call 911<br><br><strong>Other signs:</strong><br>• Sudden numbness<br>• Confusion<br>• Vision problems<br>• Dizziness<br>• Severe headache<br><br><strong>Prevention:</strong><br>✓ Control BP<br>✓ Don't smoke<br>✓ Exercise<br>✓ Healthy diet<br><br>⏰ TIME = BRAIN!"
+    },
+    {
+      "tag": "dehydration",
+      "keywords": ["dehydration", "dehydrated", "thirsty", "dry mouth"],
+      "response": "<strong>💧 DEHYDRATION</strong><br><br><strong>Symptoms:</strong><br>• Thirst<br>• Dry mouth<br>• Dark urine<br>• Dizziness<br>• Fatigue<br>• Headache<br><br><strong>Treatment:</strong><br>✓ Drink water slowly<br>✓ ORS (oral rehydration)<br>✓ Coconut water<br>✓ Clear broths<br><br><strong>Daily intake:</strong><br>• Men: 15 cups<br>• Women: 11 cups<br><br><strong>Water-rich foods:</strong><br>• Watermelon<br>• Cucumbers<br>• Oranges<br><br>⚠️ Severe: Seek medical help"
+    },
+    {
+      "tag": "nutrition",
+      "keywords": ["nutrition", "diet", "healthy eating", "food", "meal"],
+      "response": "<strong>🥗 NUTRITION Guide</strong><br><br><strong>Balanced diet:</strong><br><br>🍎 <strong>Fruits & Veggies:</strong> 5+ servings<br>🌾 <strong>Whole grains:</strong> 3+ servings<br>🥩 <strong>Protein:</strong> 2-3 servings<br>🥛 <strong>Dairy:</strong> 2-3 servings<br>💧 <strong>Water:</strong> 8 glasses<br><br><strong>Limit:</strong><br>❌ Processed foods<br>❌ Sugary drinks<br>❌ Excessive salt<br>❌ Trans fats<br><br><strong>Tips:</strong><br>✓ Eat regular meals<br>✓ Control portions<br>✓ Read labels<br>✓ Cook at home"
+    },
+    {
+      "tag": "exercise",
+      "keywords": ["exercise", "workout", "fitness", "gym", "training"],
+      "response": "<strong>💪 EXERCISE Guide</strong><br><br><strong>Benefits:</strong><br>• Stronger heart<br>• Better mood<br>• Weight control<br>• More energy<br>• Better sleep<br><br><strong>Recommendations:</strong><br>• 150 min moderate/week<br>• OR 75 min vigorous/week<br>• Strength training 2x/week<br><br><strong>Types:</strong><br>🏃 Cardio: Walking, running<br>🏋️ Strength: Weights<br>🧘 Flexibility: Yoga<br><br><strong>Getting started:</strong><br>✓ Start slow<br>✓ Choose what you enjoy<br>✓ Set goals<br>✓ Stay hydrated"
+    },
+    {
+      "tag": "sleep",
+      "keywords": ["sleep", "insomnia", "can't sleep", "tired", "fatigue"],
+      "response": "<strong>😴 SLEEP Guide</strong><br><br><strong>Recommended:</strong><br>• Adults: 7-9 hours<br>• Teens: 8-10 hours<br>• Kids: 9-12 hours<br><br><strong>Better sleep:</strong><br>✓ Same schedule daily<br>✓ Dark, quiet, cool room<br>✓ No screens 1 hour before bed<br>✓ No caffeine after 2 PM<br>✓ Exercise (not before bed)<br>✓ Avoid heavy meals<br>✓ Relaxation routine<br><br><strong>Natural aids:</strong><br>• Warm milk<br>• Chamomile tea<br>• Lavender<br>• Reading"
+    },
+    {
+      "tag": "stress_anxiety",
+      "keywords": ["stress", "anxiety", "worried", "anxious", "panic", "nervous"],
+      "response": "<strong>🧠 STRESS & ANXIETY</strong><br><br><strong>Symptoms:</strong><br>• Excessive worry<br>• Restlessness<br>• Rapid heartbeat<br>• Difficulty concentrating<br>• Sleep problems<br>• Muscle tension<br><br><strong>Management:</strong><br>✓ Deep breathing<br>✓ Regular exercise<br>✓ Adequate sleep<br>✓ Healthy diet<br>✓ Limit caffeine<br>✓ Talk to someone<br>✓ Meditation<br>✓ Yoga<br><br><strong>When to seek help:</strong><br>• Interferes with daily life<br>• Persistent worry<br>• Panic attacks<br><br>🆘 Crisis: Call 988"
+    },
+    {
+      "tag": "depression",
+      "keywords": ["depression", "sad", "depressed", "hopeless", "suicidal"],
+      "response": "<strong>💙 DEPRESSION Support</strong><br><br><strong>Symptoms:</strong><br>• Persistent sadness<br>• Loss of interest<br>• Changes in sleep/appetite<br>• Fatigue<br>• Difficulty concentrating<br>• Feelings of worthlessness<br><br><strong>Self-care:</strong><br>✓ Stay connected<br>✓ Exercise<br>✓ Regular sleep<br>✓ Healthy eating<br>✓ Sunlight exposure<br>✓ Avoid alcohol<br><br><strong>Get help:</strong><br>• Talk to doctor<br>• Therapy (CBT)<br>• Support groups<br>• Medication if needed<br><br>🆘 <strong>Crisis:</strong><br>• 988 Suicide Hotline<br>• Call 911<br><br>💚 You're not alone!"
+    },
+    {
+      "tag": "pregnancy",
+      "keywords": ["pregnancy", "pregnant", "expecting", "prenatal"],
+      "response": "<strong>🤰 PREGNANCY Info</strong><br><br><strong>Trimesters:</strong><br>• 1st (1-12 weeks): Morning sickness<br>• 2nd (13-26): More energy<br>• 3rd (27-40): Discomfort<br><br><strong>Prenatal care:</strong><br>✓ Regular doctor visits<br>✓ Prenatal vitamins (folic acid)<br>✓ Balanced diet<br>✓ Stay hydrated<br>✓ Gentle exercise<br><br><strong>Avoid:</strong><br>❌ Alcohol<br>❌ Smoking<br>❌ Raw fish/meat<br>❌ Unpasteurized dairy<br>❌ Excessive caffeine<br><br>⚠️ Call doctor if:<br>• Bleeding<br>• Severe pain<br>• Fever<br>• Decreased movement"
+    },
+    {
+      "tag": "first_aid_kit",
+      "keywords": ["first aid kit", "medical supplies", "emergency kit"],
+      "response": "<strong>🩹 FIRST AID KIT Essentials</strong><br><br><strong>Basic supplies:</strong><br>✓ Adhesive bandages (various sizes)<br>✓ Sterile gauze pads<br>✓ Medical tape<br>✓ Antiseptic wipes<br>✓ Antibiotic ointment<br>✓ Tweezers<br>✓ Scissors<br>✓ Thermometer<br>✓ Pain relievers<br>✓ Gloves<br>✓ CPR mask<br>✓ Cold pack<br>✓ Elastic bandage<br>✓ Safety pins<br><br><strong>Medications:</strong><br>• Acetaminophen<br>• Ibuprofen<br>• Antihistamine<br>• Anti-diarrheal<br><br>💡 Check/replace expired items every 6 months"
+    },
+    {
+      "tag": "vaccination",
+      "keywords": ["vaccine", "vaccination", "immunization", "shot"],
+      "response": "<strong>💉 VACCINATION Guide</strong><br><br><strong>Common vaccines:</strong><br><br><strong>Children:</strong><br>• MMR (Measles, Mumps, Rubella)<br>• Polio<br>• DTaP (Diphtheria, Tetanus, Pertussis)<br>• Hepatitis A & B<br>• Chickenpox<br>• HPV<br><br><strong>Adults:</strong><br>• Flu (annual)<br>• Tdap booster (10 years)<br>• Shingles (50+)<br>• Pneumonia (65+)<br>• COVID-19<br><br><strong>Benefits:</strong><br>✓ Prevent serious diseases<br>✓ Protect community<br>✓ Safe and effective<br><br>💡 Vaccines save millions of lives!"
+    },
+    {
+      "tag": "obesity_weight",
+      "keywords": ["obesity", "overweight", "weight loss", "lose weight", "fat"],
+      "response": "<strong>⚖️ WEIGHT MANAGEMENT</strong><br><br><strong>BMI Categories:</strong><br>• Underweight: <18.5<br>• Normal: 18.5-24.9<br>• Overweight: 25-29.9<br>• Obese: ≥30<br><br><strong>Health risks:</strong><br>• Heart disease<br>• Diabetes<br>• High BP<br>• Joint problems<br>• Sleep apnea<br><br><strong>Weight loss tips:</strong><br>✓ Calorie deficit<br>✓ Balanced diet<br>✓ Exercise 30 min/day<br>✓ Portion control<br>✓ Drink water<br>✓ Sleep 7-9 hours<br>✓ Reduce stress<br>✓ Track progress<br><br>💡 Aim for 1-2 lbs/week<br>Consult doctor for safe plan"
+    },
+    {
+      "tag": "smoking_cessation",
+      "keywords": ["smoking", "quit smoking", "cigarette", "tobacco", "nicotine"],
+      "response": "<strong>🚭 QUIT SMOKING</strong><br><br><strong>Health benefits:</strong><br>• 20 min: BP normalizes<br>• 12 hours: CO levels drop<br>• 2 weeks: Circulation improves<br>• 1 year: Heart disease risk halved<br>• 10 years: Lung cancer risk halved<br><br><strong>Quit strategies:</strong><br>✓ Set quit date<br>✓ Tell friends/family<br>✓ Remove triggers<br>✓ Nicotine replacement (patch, gum)<br>✓ Prescription meds<br>✓ Counseling/support groups<br>✓ Avoid alcohol<br>✓ Exercise<br>✓ Stay busy<br><br><strong>Cravings last:</strong> 5-10 minutes<br><br>💪 You can do it!"
+    },
+    {
+      "tag": "alcohol",
+      "keywords": ["alcohol", "drinking", "drunk", "hangover", "alcoholism"],
+      "response": "<strong>🍺 ALCOHOL Information</strong><br><br><strong>Moderate drinking:</strong><br>• Men: 2 drinks/day max<br>• Women: 1 drink/day max<br><br><strong>1 standard drink:</strong><br>• Beer: 12 oz<br>• Wine: 5 oz<br>• Spirits: 1.5 oz<br><br><strong>Risks of excessive:</strong><br>• Liver disease<br>• Heart problems<br>• Cancer<br>• Mental health issues<br>• Addiction<br><br><strong>Hangover relief:</strong><br>✓ Hydrate<br>✓ Eat bland foods<br>✓ Rest<br>✓ Pain reliever<br><br><strong>Signs of problem:</strong><br>• Can't control drinking<br>• Affects work/relationships<br>• Need more to feel effects<br><br>💚 Seek help if needed"
+    },
+    {
+      "tag": "skin_care",
+      "keywords": ["skin", "acne", "pimples", "rash", "eczema", "dry skin"],
+      "response": "<strong>✨ SKIN CARE Basics</strong><br><br><strong>Daily routine:</strong><br>✓ Cleanse (morning & night)<br>✓ Moisturize<br>✓ Sunscreen SPF 30+ (daily)<br>✓ Remove makeup before bed<br><br><strong>Common issues:</strong><br><br><strong>Acne:</strong><br>• Keep skin clean<br>• Don't pick/pop<br>• Use gentle products<br>• See dermatologist if severe<br><br><strong>Dry skin:</strong><br>• Use moisturizer<br>• Avoid hot showers<br>• Humidifier<br>• Drink water<br><br><strong>Eczema:</strong><br>• Moisturize frequently<br>• Avoid triggers<br>• Gentle soaps<br>• See doctor<br><br><strong>Skin health:</strong><br>✓ Stay hydrated<br>✓ Healthy diet<br>✓ Don't smoke<br>✓ Manage stress"
+    },
+    {
+      "tag": "dental_care",
+      "keywords": ["dental", "teeth", "tooth", "cavity", "toothache", "gums"],
+      "response": "<strong>🦷 DENTAL CARE</strong><br><br><strong>Daily care:</strong><br>✓ Brush 2x daily (2 minutes)<br>✓ Floss once daily<br>✓ Fluoride toothpaste<br>✓ Rinse with mouthwash<br>✓ Replace toothbrush every 3 months<br><br><strong>Dentist visits:</strong><br>• Every 6 months<br>• Professional cleaning<br>• Checkup for cavities<br><br><strong>Toothache relief:</strong><br>• Rinse with salt water<br>• Pain reliever<br>• Cold compress<br>• See dentist soon<br><br><strong>Prevent cavities:</strong><br>✓ Limit sugary foods<br>✓ Don't skip brushing<br>✓ Drink water<br>✓ Chew sugar-free gum<br><br>💡 Healthy teeth = healthy body!"
+    },
+    {
+      "tag": "eye_care",
+      "keywords": ["eye", "vision", "blurry vision", "eye pain", "glasses"],
+      "response": "<strong>👁️ EYE CARE</strong><br><br><strong>Screen time tips:</strong><br>✓ 20-20-20 rule: Every 20 min, look 20 feet away for 20 sec<br>✓ Blink frequently<br>✓ Adjust brightness<br>✓ Blue light filter<br>✓ Proper distance (arm's length)<br><br><strong>Daily care:</strong><br>✓ Remove makeup before bed<br>✓ Don't rub eyes<br>✓ Wear sunglasses (UV protection)<br>✓ Eat eye-healthy foods (carrots, leafy greens)<br><br><strong>Warning signs:</strong><br>• Sudden vision changes<br>• Persistent pain<br>• Redness<br>• Flashes of light<br>• Floaters<br><br>⚠️ Eye exams every 1-2 years"
+    },
+    {
+      "tag": "back_pain",
+      "keywords": ["back pain", "backache", "lower back", "spine"],
+      "response": "<strong>🧍 BACK PAIN</strong><br><br><strong>Common causes:</strong><br>• Poor posture<br>• Muscle strain<br>• Heavy lifting<br>• Prolonged sitting<br>• Injury<br><br><strong>Relief:</strong><br>✓ Rest (but stay active)<br>✓ Ice (first 48 hours)<br>✓ Heat (after 48 hours)<br>✓ Pain reliever<br>✓ Gentle stretching<br>✓ Good posture<br><br><strong>Prevention:</strong><br>✓ Exercise core muscles<br>✓ Proper lifting technique<br>✓ Ergonomic workspace<br>✓ Maintain healthy weight<br>✓ Sleep on side with pillow<br><br>⚠️ See doctor if:<br>• Severe pain<br>• Radiates down leg<br>• Numbness/weakness<br>• After injury<br>• Lasts >2 weeks"
+    },
+    {
+      "tag": "arthritis",
+      "keywords": ["arthritis", "joint pain", "stiff joints", "rheumatoid"],
+      "response": "<strong>🦴 ARTHRITIS</strong><br><br><strong>Types:</strong><br>• <strong>Osteoarthritis:</strong> Wear and tear<br>• <strong>Rheumatoid:</strong> Autoimmune<br><br><strong>Symptoms:</strong><br>• Joint pain<br>• Stiffness (especially morning)<br>• Swelling<br>• Reduced range of motion<br><br><strong>Management:</strong><br>✓ Stay active (low-impact exercise)<br>✓ Maintain healthy weight<br>✓ Hot/cold therapy<br>✓ Pain relievers<br>✓ Physical therapy<br>✓ Assistive devices<br><br><strong>Exercise:</strong><br>• Swimming<br>• Walking<br>• Tai chi<br>• Yoga<br><br><strong>Diet:</strong><br>✓ Omega-3 (fish)<br>✓ Anti-inflammatory foods<br>✓ Limit processed foods"
+    },
+    {
+      "tag": "emergency_numbers",
+      "keywords": ["emergency", "911", "help", "urgent", "ambulance"],
+      "response": "<strong>🚨 EMERGENCY CONTACTS</strong><br><br><strong>United States:</strong><br>• Emergency: 911<br>• Poison Control: 1-800-222-1222<br>• Suicide Hotline: 988<br><br><strong>When to call 911:</strong><br>• Difficulty breathing<br>• Chest pain<br>• Severe bleeding<br>• Loss of consciousness<br>• Stroke symptoms<br>• Severe allergic reaction<br>• Severe burns<br>• Head/spinal injury<br>• Choking<br>• Seizures<br>• Suicidal thoughts<br><br><strong>What to tell 911:</strong><br>• Your location<br>• What happened<br>• Number of people<br>• Condition of patient<br><br>💡 Stay calm, follow instructions"
+    },
+    {
+      "tag": "food_poisoning",
+      "keywords": ["food poisoning", "food sick", "contaminated food", "spoiled food"],
+      "response": "<strong>🤮 FOOD POISONING</strong><br><br><strong>Symptoms (2-6 hours after eating):</strong><br>• Nausea<br>• Vomiting<br>• Diarrhea<br>• Stomach cramps<br>• Fever<br><br><strong>Treatment:</strong><br>✓ Rest<br>✓ Stay hydrated (ORS)<br>✓ Clear liquids<br>✓ Bland foods (BRAT)<br>✓ Avoid solid foods initially<br><br><strong>Usually resolves:</strong> 1-3 days<br><br><strong>Prevention:</strong><br>✓ Cook meat thoroughly<br>✓ Wash hands/surfaces<br>✓ Refrigerate promptly<br>✓ Avoid raw eggs<br>✓ Check expiration dates<br><br>⚠️ See doctor if:<br>• Severe dehydration<br>• High fever<br>• Bloody stool<br>• Symptoms >3 days<br>• Pregnant/elderly/young"
+    },
+    {
+      "tag": "sunburn",
+      "keywords": ["sunburn", "sun burn", "burnt skin", "sun damage"],
+      "response": "<strong>☀️ SUNBURN Treatment</strong><br><br><strong>Immediate care:</strong><br>✓ Get out of sun<br>✓ Cool bath/shower<br>✓ Apply aloe vera<br>✓ Moisturizer<br>✓ Drink water<br>✓ Take ibuprofen<br>✓ Don't pop blisters<br><br><strong>What NOT to do:</strong><br>❌ Ice directly on skin<br>❌ Petroleum jelly<br>❌ Butter/oils<br>❌ Further sun exposure<br><br><strong>Prevention:</strong><br>✓ Sunscreen SPF 30+<br>✓ Reapply every 2 hours<br>✓ Seek shade (10am-4pm)<br>✓ Wear protective clothing<br>✓ Sunglasses<br>✓ Wide-brimmed hat<br><br>⚠️ See doctor if:<br>• Severe blistering<br>• Fever/chills<br>• Severe pain<br>• Signs of infection"
+    }
+  ]
+}
